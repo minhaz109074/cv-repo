@@ -2,6 +2,7 @@ import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import DarkMode from "@/components/ui/dark-mode";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 import { DownloadIcon, FlameIcon } from "lucide-react";
@@ -38,6 +39,7 @@ export default function Page() {
                 <FlameIcon className="mr-2 h-4 w-4" /> Blog
               </Button>
               </a>
+              <DarkMode />
             </div>
           </div>
         </div>

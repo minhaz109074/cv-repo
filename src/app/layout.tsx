@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
+import { Providers } from "@/components/providers";
 import React from "react";
 import "./globals.css";
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className} scroll-smooth dark`}>
       <body>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
