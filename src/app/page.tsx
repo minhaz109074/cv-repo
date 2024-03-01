@@ -4,16 +4,21 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import DarkMode from "@/components/ui/dark-mode";
 import { Section } from "@/components/ui/section";
+import { Views } from "@/components/views";
 import { RESUME_DATA } from "@/data/resume-data";
-import { DownloadIcon, FlameIcon } from "lucide-react";
+import { Redis } from "@upstash/redis";
+import { DownloadIcon, Eye, FlameIcon } from "lucide-react";
 import { Metadata } from "next";
+
+const redis = Redis.fromEnv();
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
 };
 
-export default function Page() {
+export default async function Page() {
+  const views = await redis.get<number>("pageviews:cv:mukesh");
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
@@ -26,6 +31,12 @@ export default function Page() {
             <p className="items-center text-pretty  text-xs text-muted-foreground pb-3">
               {RESUME_DATA.location}
             </p>
+            <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 pb-2">
+              <Eye className="w-4 h-4" />{" "}
+              {Intl.NumberFormat("en-US", { notation: "compact" }).format(
+                views ?? 0,
+              )}
+            </span>
             <div className=" print:hidden">
 
               <a href={RESUME_DATA.resume} target="_blank">
@@ -41,6 +52,7 @@ export default function Page() {
               </a>
               <DarkMode />
             </div>
+            <Views slug="/" />
           </div>
         </div>
         <Section className="print:hidden">
