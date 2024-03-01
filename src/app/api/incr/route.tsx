@@ -9,7 +9,6 @@ export const POST = async (req: NextRequest) => {
     }
     const slug = "pageviews:cv:mukesh";
     const ip = req.headers.get('X-Forwarded-For');
-    console.log(ip);
     if (ip) {
         // Hash the IP in order to not store it directly in your db.
         const buf = await crypto.subtle.digest(
