@@ -1,3 +1,4 @@
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import {
   AmbitLogo,
   BarepapersLogo,
@@ -17,53 +18,61 @@ import {
   TastyCloudLogo,
   YearProgressLogo,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { PenIcon, YoutubeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
+  name: "Mukesh Murugan",
+  initials: "MM",
+  location: "Trivandrum, Kerala, India",
   locationLink: "https://www.google.com/maps/place/Wrocław",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Software Engineer focused on building products with extra attention to detail!",
   summary:
     "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
   avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
     social: [
       {
-        name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
-        icon: GitHubIcon,
-      },
-      {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/iammukeshm/",
         icon: LinkedInIcon,
       },
       {
+        name: "GitHub",
+        url: "https://github.com/iammukeshm",
+        icon: GitHubIcon,
+      },
+      {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/iammukeshm",
         icon: XIcon,
+      },
+      {
+        name: "Blog",
+        url: "https://codewithmukesh.com/",
+        icon: PenIcon,
+      },
+      {
+        name: "YouTube",
+        url: "https://www.youtube.com/@codewithmukesh/videos",
+        icon: YoutubeIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Birla Institute of Technology, Mesra",
+      degree: "Electronics & Communication Engineering.",
+      start: "2012",
+      end: "2016",
     },
   ],
   work: [
     {
-      company: "Parabol",
+      company: "CSG International",
       link: "https://parabol.co",
-      badges: ["Remote"],
+      badges: ["remote"],
       title: "Senior Full Stack Developer",
       logo: ParabolLogo,
       start: "2021",
@@ -72,7 +81,7 @@ export const RESUME_DATA = {
         "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
     {
-      company: "Clevertech",
+      company: "Allianz",
       link: "https://clevertech.biz",
       badges: ["Remote"],
       title: "Lead Android Developer → Full Stack Developer",
@@ -83,7 +92,7 @@ export const RESUME_DATA = {
         "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
     },
     {
-      company: "Jojo Mobile",
+      company: "PITS",
       link: "https://bsgroup.eu/",
       badges: [],
       title: "Android Developer → Lead Android Developer",
@@ -94,7 +103,7 @@ export const RESUME_DATA = {
         "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
     },
     {
-      company: "Nokia Siemens Networks",
+      company: "Adroit Solutions LLC",
       link: "https://www.nokia.com",
       badges: [],
       title: "C/C++ Developer",
@@ -105,13 +114,14 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    ".NET",
+    "ASP.NET Core",
+    "Web API",
+    "Golang",
+    "NextJs",
+    "AWS",
+    "Terraform",
+    "GitHub Actions",
   ],
   projects: [
     {
