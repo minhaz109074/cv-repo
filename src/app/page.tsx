@@ -91,14 +91,15 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end}
-                    </div>
                   </div>
 
                   <h4 className=" text-sm leading-none">
-                    {work.title}
+                    <span className="font-semibold">{work.title}</span> • {work.location}
                   </h4>
+
+                  <div className="text-xs tabular-nums text-gray-500">
+                    {work.start} - {work.end}
+                  </div>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
@@ -131,7 +132,7 @@ export default function Page() {
           <h2 className="text-xl">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
-              return <Badge className=" bg-indigo-700 hover:bg-indigo-800" key={skill}>{skill}</Badge>;
+              return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>

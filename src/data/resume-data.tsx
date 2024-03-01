@@ -53,37 +53,37 @@ export const RESUME_DATA = {
   work: [
     {
       company: "CSG International",
-      link: "https://parabol.co",
-      badges: ["remote", "current"],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
+      location: "Bangalore, Karnataka",
+      badges: ["remote"],
+      title: "SDE 2",
+      start: "February, 2022",
+      end: "Current",
       description:
         "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
     {
-      company: "Allianz",
-      link: "https://clevertech.biz",
+      company: "ALLIANZ",
+      location: "Trivandrum, Kerala",
       badges: ["remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
+      title: "Senior Software Engineer",
+      start: "March, 2021",
+      end: "February, 2022",
       description:
         "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
     },
     {
       company: "PITS",
-      link: "https://bsgroup.eu/",
+      location: "Trivandrum, Kerala",
       badges: [],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
+      title: "Software Engineer",
+      start: "July, 2019",
+      end: "March, 2021",
       description:
         "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
     },
     {
       company: "Adroit Solutions LLC",
-      link: "https://www.nokia.com",
+      location: "Al Khuwair, Oman",
       badges: [],
       title: "C/C++ Developer",
       start: "2010",
@@ -96,10 +96,13 @@ export const RESUME_DATA = {
     "ASP.NET Core",
     "Web API",
     "Golang",
-    "NextJs",
+    "Docker",
+    "Kubernetes",
     "AWS",
     "Terraform",
     "GitHub Actions",
+    "SQL",
+    "NoSQL"
   ],
   projects: [
     {
