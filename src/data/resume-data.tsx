@@ -4,12 +4,13 @@ import { PenIcon, YoutubeIcon } from "lucide-react";
 export const RESUME_DATA = {
   name: "Mukesh Murugan",
   initials: "MM",
+  avatar: "/mukesh_murugan.jpg",
   resume: "/cv.pdf",
   location: "Trivandrum, Kerala, India",
   about:
-    "Software Engineer focused on building products with extra attention to detail!",
+    "Software Engineer focused on building scalable services on the cloud.",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
+    "Software Engineer with 7+ Years of Experience in Backend development with .NET, Go, Docker, Kubernetes, Terraform and Cloud Technologies like AWS.",
   personalWebsiteUrl: "https://codewithmukesh.com",
   contact: {
     social: [
@@ -43,9 +44,11 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Birla Institute of Technology, Mesra",
-      degree: "Electronics & Communication Engineering.",
+      degree: "Electronics & Communication Engineering",
       start: "2012",
       end: "2016",
+      location: "Waljat College Of Applied Science, Oman",
+      gpa: "7.2"
     },
   ],
   work: [
@@ -57,7 +60,7 @@ export const RESUME_DATA = {
       start: "February, 2022",
       end: "Current",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "Designed & Implemented new features, worked on improving the the product. Experience in Microservices, Serverless, and Cloud Technologies.",
     },
     {
       company: "ALLIANZ",
@@ -66,8 +69,7 @@ export const RESUME_DATA = {
       title: "Senior Software Engineer",
       start: "March, 2021",
       end: "February, 2022",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+      description: ""
     },
     {
       company: "PITS",
@@ -76,8 +78,7 @@ export const RESUME_DATA = {
       title: "Software Engineer",
       start: "July, 2019",
       end: "March, 2021",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+      description: ""
     },
     {
       company: "Adroit Solutions LLC",
@@ -86,7 +87,7 @@ export const RESUME_DATA = {
       title: "C/C++ Developer",
       start: "2010",
       end: "2012",
-      description: "Creating and testing software for LTE base stations",
+      description: ""
     },
   ],
   skills: [
@@ -104,40 +105,45 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "ARC Offline",
+      organization: "CSG International",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "Golang",
+        ".NET",
+        "Microservices",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Redis"
       ],
-      description: "A platform to build and grow your online business",
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
+      description: "Telecom Rating and Processing System Backend with Microservice Architecture running on the Cloud(AWS).",
+      points: [
+        "Stack includes Golang, .NET, Kubernetes, Terraform, PostgreSQL, ECS, AWS Lambda, S3, Athena, DynamoDB, SNS, SQS, and other AWS Services.",
+        "Optimized costs (over 2,000 USD per month) by implementing Multitenancy and reducing resource provisioning.",
+        "Cross Team Collaboration for Features",
+        "CI/CD with Azure DevOps Pipelines and AWS CodePipeline.",
+        "Involved in Designing various cross-team integrations, Grooming, and Planning.",
+        "DevOps Activities for cost monitoring, performance tracking, and deploying applications to production and customer - facing environments."
+      ],
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
+      title: "INSURANCE INPUT MANAGEMENT SYSTEM",
+      organization: "Allianz",
+      techStack: [
+        ".NET",
+        "Microservices",
+        "Azure",
+        "Computer Vision",
+        "RabbitMQ",
+        "Web API"
+      ],
+      description: "AIMS is responsible for monitoring customer mailboxes, performs OCR using Azure Computer Vision / Google Cloud Vision, and exports the document to other endpoints as needed by the business.",
+      points: [
+        "Worked with .NET Core, ASP.NET Core WebAPI, MongoDB, RabbitMQ, Angular, OCR",
+        "Provided estimates based on tasks and ensured due delivery.",
+        "Involved in complete SDLC for various OE Projects.",
+        "Responsible to Deployment to UAT and Production Environments."
+      ],
+    }
   ],
 } as const;

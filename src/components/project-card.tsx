@@ -9,17 +9,19 @@ import {
 
 interface Props {
   title: string;
+  organization: string;
   description: string;
   tags: readonly string[];
+  points: readonly string[];
   link?: string;
 }
 
-export function ProjectCard({ title, description, tags, link }: Props) {
+export function ProjectCard({ title, organization, description, tags, link, points }: Props) {
   return (
     <Card className="flex flex-col overflow-hidden border p-3">
       <CardHeader className="">
         <div className="space-y-1">
-          <CardTitle className="text-base">
+          <CardTitle className="text-base pb-2">
             {link ? (
               <a
                 href={link}
@@ -31,13 +33,19 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               </a>
             ) : (
               title
-            )}
+            )}  • <span className=" text-muted-foreground font-light text-sm"> {organization}</span>
           </CardTitle>
           <div className="hidden text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
           <CardDescription className="text-xs">
-            {description}
+            <div className="pb-2">
+              {description}
+            </div>
+
+            {points.map((point) => (
+              <li className="ml-4 pb-1" key={point}>{point}</li>
+            ))}
           </CardDescription>
         </div>
       </CardHeader>

@@ -9,6 +9,7 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { Redis } from "@upstash/redis";
 import { DownloadIcon, Eye, FlameIcon } from "lucide-react";
 import { Metadata } from "next";
+import Image from "next/image";
 
 const redis = Redis.fromEnv();
 
@@ -24,6 +25,15 @@ export default async function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
         <div className="flex items-center px-4 pb-6 pt-4 border-b text-center">
           <div className="flex-1 space-y-1.5">
+            <div className="flex items-center justify-center text-center pb-2">
+              <Image
+                src={RESUME_DATA.avatar}
+                alt={RESUME_DATA.name}
+                width={200}
+                height={200}
+                className="object-top object-cover rounded-full bg-white h-24 w-24"
+              />
+            </div>
             <h1 className="text-4xl">{RESUME_DATA.name}</h1>
             <p className="text-pretty text-sm">
               {RESUME_DATA.about}
@@ -128,12 +138,16 @@ export default async function Page() {
                     <h3 className="leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
-                    </div>
+                  </div>
+
+                  <div className="text-xs text-gray-500">
+                    {education.location}
+                  </div>
+                  <div className="text-xs text-gray-500">
+                    {education.start} - {education.end}
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2">{education.degree} • GPA {education.gpa}</CardContent>
               </Card>
             );
           })}
@@ -158,10 +172,11 @@ export default async function Page() {
               return (
                 <ProjectCard
                   key={project.title}
+                  organization={project.organization}
                   title={project.title}
                   description={project.description}
                   tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
+                  points={project.points}
                 />
               );
             })}
