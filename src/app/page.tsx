@@ -57,9 +57,9 @@ export default async function Page() {
               <Image
                 src={RESUME_DATA.avatar}
                 alt={RESUME_DATA.name}
-                width={200}
-                height={200}
-                className="object-top object-cover rounded-full bg-white h-24 w-24"
+                width={250}
+                height={250}
+                className="object-top object-cover rounded-full bg-white h-32 w-32"
               />
             </div>
             <h1 className="text-4xl">{RESUME_DATA.name}</h1>
