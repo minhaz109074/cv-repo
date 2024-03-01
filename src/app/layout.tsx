@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className} scroll-smooth dark`}>
+    <html lang="en" className={`${inter.className} scroll-smooth`}>
       <body>
         <Providers>{children}</Providers>
       </body>
