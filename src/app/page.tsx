@@ -219,7 +219,7 @@ export default async function Page() {
                 size="icon"
                 asChild
               >
-                <a href={social.url}>
+                <a aria-label={social.name} href={social.url}>
                   <social.icon className="size-4" />
                 </a>
               </Button>

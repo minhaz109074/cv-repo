@@ -42,10 +42,11 @@ export function ProjectCard({ title, organization, description, tags, link, poin
             <div className="pb-2">
               {description}
             </div>
-
-            {points.map((point) => (
-              <li className="ml-4 pb-1" key={point}>{point}</li>
-            ))}
+            <ul className="list-disc">
+              {points.map((point) => (
+                <li className="ml-4 pb-1" key={point}>{point}</li>
+              ))}
+            </ul>
           </CardDescription>
         </div>
       </CardHeader>
