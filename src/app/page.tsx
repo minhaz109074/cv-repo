@@ -181,7 +181,7 @@ export default async function Page() {
         </Section>
         <Section>
           <h2 className="text-xl">Skills</h2>
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 border p-4 rounded-lg">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge
                 className="p-2 text-sm"
@@ -194,7 +194,7 @@ export default async function Page() {
 
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3 px-4">
+          <div className="-mx-3 grid grid-cols-1 gap-3 px-4">
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
