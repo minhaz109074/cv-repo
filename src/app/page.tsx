@@ -152,6 +152,24 @@ export default function Page() {
             })}
           </div>
         </Section>
+        <hr></hr>
+        <Section className="print:hidden text-center items-center pb-6">
+          <div className="flex gap-x-1 pt-1 text-sm text-muted-foreground print:hidden">
+            {RESUME_DATA.contact.social.map((social) => (
+              <Button
+                key={social.name}
+                className="size-8"
+                variant="outline"
+                size="icon"
+                asChild
+              >
+                <a href={social.url}>
+                  <social.icon className="size-4" />
+                </a>
+              </Button>
+            ))}
+          </div>
+        </Section>
       </section>
     </main>
   );
