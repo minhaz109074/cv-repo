@@ -1,3 +1,4 @@
+import { GitHubIcon } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -75,12 +76,10 @@ export default async function Page() {
               )}
             </span>
             <div className=" print:hidden">
-
               <a href={RESUME_DATA.resume} target="_blank">
                 <Button size={"sm"} variant={'default'} className="text-pretty  text-xs">
                   <DownloadIcon className="mr-2 h-4 w-4" /> Resume
                 </Button>
-
               </a>
               <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
               <Button size={"sm"} variant={'outline'} className="text-pretty  text-xs ml-1">
@@ -210,7 +209,7 @@ export default async function Page() {
           </div>
         </Section>
         <hr></hr>
-        <Section className="print:hidden text-center items-center pb-6">
+        <Section className="print:hidden text-center items-center">
           <div className="flex gap-x-1 pt-1 text-sm text-muted-foreground print:hidden">
             {RESUME_DATA.contact.social.map((social) => (
               <Button
@@ -227,6 +226,14 @@ export default async function Page() {
             ))}
           </div>
         </Section>
+
+        <div className=" print:hidden  text-center items-center pb-6">
+          <a href="https://github.com/iammukeshm/cv" target="_blank">
+            <Button size={"sm"} variant={'default'} className="text-pretty  text-xs">
+              <GitHubIcon className="mr-2 h-4 w-4" /> Fork This Repository!
+            </Button>
+          </a>
+        </div>
       </section>
     </main>
   );
