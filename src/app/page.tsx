@@ -12,10 +12,37 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 const redis = Redis.fromEnv();
+const pageTitle = `${RESUME_DATA.name} | ${RESUME_DATA.about}`
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+  title: pageTitle,
   description: RESUME_DATA.summary,
+  metadataBase: new URL(RESUME_DATA.url),
+  category: 'technology',
+  openGraph: {
+    type: 'website',
+    url: RESUME_DATA.url,
+    title: pageTitle,
+    description: RESUME_DATA.summary,
+    locale: 'en-US',
+    siteName: RESUME_DATA.name,
+    images: [
+      RESUME_DATA.url + RESUME_DATA.ogImage
+    ]
+  },
+  alternates: {
+    canonical: './',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageTitle,
+    description: RESUME_DATA.summary,
+    images: [
+      RESUME_DATA.url + RESUME_DATA.ogImage
+    ],
+    site: RESUME_DATA.twitter,
+    creator: RESUME_DATA.twitter,
+  }
 };
 
 export default async function Page() {

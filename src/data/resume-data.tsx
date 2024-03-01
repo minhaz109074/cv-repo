@@ -7,6 +7,9 @@ export const RESUME_DATA = {
   avatar: "/mukesh_murugan.jpg",
   resume: "/cv.pdf",
   location: "Trivandrum, Kerala, India",
+  url: "https://cv.codewithmukesh.com",
+  ogImage: "/mukeshmurugan_banner.png",
+  twitter: "@iammukeshm",
   about:
     "Software Engineer focused on building scalable services on the cloud.",
   summary:
