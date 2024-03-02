@@ -63,7 +63,7 @@ export const RESUME_DATA = {
       start: "February, 2022",
       end: "Current",
       description:
-        "Designed & Implemented new features, worked on improving the the Telecom Rating System. Experience in Microservices, Serverless, and Cloud Technologies.",
+        "Designed & Implemented new features, worked on improving the Telecom Rating System. Experience in Microservices, Serverless, and Cloud Technologies.",
     },
     {
       company: "ALLIANZ",
