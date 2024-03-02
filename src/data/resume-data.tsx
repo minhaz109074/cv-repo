@@ -14,7 +14,7 @@ export const RESUME_DATA = {
     "Software Engineer focused on building scalable services on the cloud.",
   summary:
     "Software Engineer with 7+ Years of Experience in Backend development with .NET, Go, Docker, Kubernetes, Terraform and Cloud Technologies like AWS.",
-  personalWebsiteUrl: "https://codewithmukesh.com",
+  personalWebsiteUrl: "https://staging.codewithmukesh.com",
   contact: {
     social: [
       {
@@ -63,7 +63,7 @@ export const RESUME_DATA = {
       start: "February, 2022",
       end: "Current",
       description:
-        "Designed & Implemented new features, worked on improving the the product. Experience in Microservices, Serverless, and Cloud Technologies.",
+        "Designed & Implemented new features, worked on improving the the Telecom Rating System. Experience in Microservices, Serverless, and Cloud Technologies.",
     },
     {
       company: "ALLIANZ",
@@ -72,7 +72,7 @@ export const RESUME_DATA = {
       title: "Senior Software Engineer",
       start: "March, 2021",
       end: "February, 2022",
-      description: ""
+      description: "Worked on .NET Backend Microservices with RabbitMQ, Docker, ASP.NET Core Web API to build an Input Management System for Insurance Firms."
     },
     {
       company: "PITS",
@@ -81,7 +81,7 @@ export const RESUME_DATA = {
       title: "Software Engineer",
       start: "July, 2019",
       end: "March, 2021",
-      description: ""
+      description: "Worked on .NET, WPF, SQL, ASP.NET Core WebAPI to build Point Of Sales System for Automobile Parts Vendors."
     },
     {
       company: "Adroit Solutions LLC",
@@ -90,7 +90,7 @@ export const RESUME_DATA = {
       title: "C/C++ Developer",
       start: "2010",
       end: "2012",
-      description: ""
+      description: "Worked on .NET Web API, MVC, SQL for building Point Of Sales System that handle customer transactions."
     },
   ],
   skills: [
