@@ -228,7 +228,7 @@ export default async function Page() {
         </Section>
 
         <div className=" print:hidden  text-center items-center pb-6">
-          <a href="https://github.com/iammukeshm/cv" target="_blank">
+          <a href="https://github.com/minhaz109074/cv-repo" target="_blank">
             <Button size={"sm"} variant={'default'} className="text-pretty  text-xs">
               <GitHubIcon className="mr-2 h-4 w-4" /> Fork This Repository!
             </Button>
