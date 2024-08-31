@@ -7,7 +7,7 @@ export const POST = async (req: NextRequest) => {
     if (req.headers.get("Content-Type") !== "application/json") {
         return new NextResponse("must be json", { status: 400 });
     }
-    const slug = "pageviews:cv:mukesh";
+    const slug = "pageviews:cv:minhaz";
     const ip = req.headers.get('X-Forwarded-For');
     if (ip) {
         // Hash the IP in order to not store it directly in your db.

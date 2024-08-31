@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  const views = await redis.get<number>("pageviews:cv:mukesh");
+  const views = await redis.get<number>("pageviews:cv:minhaz");
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
@@ -81,11 +81,11 @@ export default async function Page() {
                   <DownloadIcon className="mr-2 h-4 w-4" /> Resume
                 </Button>
               </a>
-              <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
+              {/* <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
               <Button size={"sm"} variant={'outline'} className="text-pretty  text-xs ml-1">
                 <FlameIcon className="mr-2 h-4 w-4" /> Blog
               </Button>
-              </a>
+              </a> */}
               <DarkMode />
             </div>
             <Views slug="/" />

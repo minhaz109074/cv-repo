@@ -2,151 +2,118 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { PenIcon, YoutubeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Mukesh Murugan",
-  initials: "MM",
-  avatar: "/mukesh_murugan.png",
+  name: "Minhazul Abedin",
+  initials: "MA",
+  avatar: "/minhazul-abedin.png",
   resume: "/cv.pdf",
-  location: "Trivandrum, Kerala, India",
-  url: "https://cv.codewithmukesh.com",
-  ogImage: "/mukeshmurugan_banner.png",
-  twitter: "@iammukeshm",
+  location: "Dhaka, Bangladesh",
+  url: "https://www.linkedin.com/in/minhazul-abedin-1b5b2b1ab",
+  ogImage: " ",
+  twitter: " ",
   about:
-    "Software Engineer focused on building scalable services on the cloud.",
+    "Software Engineer focused on building scalable micro services on the cloud.",
   summary:
-    "Software Engineer with 7+ Years of Experience in Backend development with .NET, Go, Docker, Kubernetes, Terraform and Cloud Technologies like AWS.",
-  personalWebsiteUrl: "https://staging.codewithmukesh.com",
+    "I am a Software Engineer with over 1.5 years of experience in developing and deploying robust software solutions, focusing on .NET technologies such as .NET Framework, ASP.NET Core, and ASP.NET MVC. I am skilled in building scalable backend applications and microservices.",
+  personalWebsiteUrl: " ",
   contact: {
     social: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/iammukeshm/",
+        url: "https://www.linkedin.com/in/minhazul-abedin-1b5b2b1ab",
         icon: LinkedInIcon,
       },
       {
         name: "GitHub",
-        url: "https://github.com/iammukeshm",
+        url: "https://github.com/minhaz109074",
         icon: GitHubIcon,
       },
-      {
-        name: "X",
-        url: "https://x.com/iammukeshm",
-        icon: XIcon,
-      },
-      {
-        name: "Blog",
-        url: "https://codewithmukesh.com/",
-        icon: PenIcon,
-      },
-      {
-        name: "YouTube",
-        url: "https://www.youtube.com/@codewithmukesh/videos",
-        icon: YoutubeIcon,
-      },
+   
+     
     ],
   },
   education: [
     {
-      school: "Birla Institute of Technology, Mesra",
-      degree: "Electronics & Communication Engineering",
-      start: "2012",
-      end: "2016",
-      location: "Waljat College Of Applied Science, Oman",
-      gpa: "7.2"
+      school: "Noakhali Science and Technology University",
+      degree: "Bachelor of Science in Computer Science and Telecommunication Engineering",
+      start: "2017",
+      end: "2022",
+      location: "Noakhali, Bangladesh",
+      gpa: "3.58",
     },
   ],
   work: [
     {
-      company: "CSG International",
-      location: "Bangalore, Karnataka",
-      badges: ["remote"],
-      title: "SDE 2",
-      start: "February, 2022",
-      end: "Current",
-      description:
-        "Designed & Implemented new features, worked on improving the Telecom Rating System. Experience in Microservices, Serverless, and Cloud Technologies.",
-    },
-    {
-      company: "ALLIANZ",
-      location: "Trivandrum, Kerala",
-      badges: ["remote"],
-      title: "Senior Software Engineer",
-      start: "March, 2021",
-      end: "February, 2022",
-      description: "Worked on .NET Backend Microservices with RabbitMQ, Docker, ASP.NET Core Web API to build an Input Management System for Insurance Firms."
-    },
-    {
-      company: "PITS",
-      location: "Trivandrum, Kerala",
+      company: "Astha IT",
+      location: "Dhaka, Bangladesh",
       badges: [],
       title: "Software Engineer",
-      start: "July, 2019",
-      end: "March, 2021",
-      description: "Worked on .NET, WPF, SQL, ASP.NET Core WebAPI to build Point Of Sales System for Automobile Parts Vendors."
+      start: "December, 2022",
+      end: "Current",
+      description:
+        "Developed and maintained backend solutions using .NET Core and Microservices architecture. Implemented a robust file storage system, developed new features for client, and optimized data processing and system.",
     },
     {
-      company: "Adroit Solutions LLC",
-      location: "Al Khuwair, Oman",
+      company: "Astha IT",
+      location: "Dhaka, Bangladesh",
       badges: [],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description: "Worked on .NET Web API, MVC, SQL for building Point Of Sales System that handle customer transactions."
+      title: "Software Engineer Intern",
+      start: "August, 2022",
+      end: "November, 2022",
+      description:
+        "Participated in Astha IT Dev Bootcamp, gaining practical experience with various technologies and developing small-scale projects to learn and apply new skills.",
     },
   ],
   skills: [
-    ".NET",
+    "C#",
+    ".NET Framework",
     "ASP.NET Core",
+    "ASP.NET MVC",
     "Web API",
-    "Golang",
     "Docker",
-    "Kubernetes",
     "AWS",
-    "Terraform",
-    "GitHub Actions",
+    "JIRA",
+    "Git",
     "SQL",
-    "NoSQL"
+    "Vector Database"
   ],
   projects: [
     {
-      title: "ARC Offline",
-      organization: "CSG International",
+      title: "DocIT",
+      organization: "Astha IT",
       techStack: [
-        "Golang",
-        ".NET",
-        "Microservices",
+        "Angular",
+        "React",
+        "ASP.NET Core",
+        "Cassandra",
+        "PostgreSQL",
         "AWS",
-        "Docker",
-        "Kubernetes",
-        "Redis"
+        "Micro services",
+        "Kafka"
       ],
-      description: "Telecom Rating and Processing System Backend with Microservice Architecture running on the Cloud(AWS).",
+      description: "DocIT is a cloud-based learning management system designed for healthcare organizations to create customized training modules and access pre-built courses, enhancing staff proficiency in healthcare operations and clinical documentation.",
       points: [
-        "Stack includes Golang, .NET, Kubernetes, Terraform, PostgreSQL, ECS, AWS Lambda, S3, Athena, DynamoDB, SNS, SQS, and other AWS Services.",
-        "Optimized costs (over 2,000 USD per month) by implementing Multitenancy and reducing resource provisioning.",
-        "Cross Team Collaboration for Features",
-        "CI/CD with Azure DevOps Pipelines and AWS CodePipeline.",
-        "Involved in Designing various cross-team integrations, Grooming, and Planning.",
-        "DevOps Activities for cost monitoring, performance tracking, and deploying applications to production and customer - facing environments."
+        "Maintained and monitored 13 microservices on the backend, ensuring system stability and resolving issues.",
+        "Developed key features such as course management, organization creation, and progress tracking and reporting.",
+        "Assisted in converting the project from a single-tenant to a multi-tenant architecture."
       ],
     },
     {
-      title: "INSURANCE INPUT MANAGEMENT SYSTEM",
-      organization: "Allianz",
+      title: "Caboodle Services",
+      organization: "Astha IT",
       techStack: [
-        ".NET",
-        "Microservices",
-        "Azure",
-        "Computer Vision",
-        "RabbitMQ",
-        "Web API"
+        "ReactJS",
+        "NextJS",
+        "Tailwind",
+        "ASP.NET Core",
+        "AWS",
+        "PostgreSQL"
       ],
-      description: "AIMS is responsible for monitoring customer mailboxes, performs OCR using Azure Computer Vision / Google Cloud Vision, and exports the document to other endpoints as needed by the business.",
+      description: "Caboodle is an all-in-one platform for natural product sales teams, integrating sales tracking, trade promotions, data analytics, and marketing functions.",
       points: [
-        "Worked with .NET Core, ASP.NET Core WebAPI, MongoDB, RabbitMQ, Angular, OCR",
-        "Provided estimates based on tasks and ensured due delivery.",
-        "Involved in complete SDLC for various OE Projects.",
-        "Responsible to Deployment to UAT and Production Environments."
+        "Designed and optimized database schemas to efficiently handle large-scale client sales data.",
+        "Achieved a 75% speed improvement for data insertion through bulk operations.",
+        "Developed a file storage system for managing files, including uploading, downloading, deleting, moving, and folder management."
       ],
-    }
+    },
   ],
 } as const;
